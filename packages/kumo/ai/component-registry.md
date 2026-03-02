@@ -3839,11 +3839,7 @@ Option sub-component
       value={value}
       onValueChange={(v) => setValue(v ?? "apple")}
       items={{ apple: "Apple", banana: "Banana", cherry: "Cherry" }}
-    >
-      <Select.Option value="apple">Apple</Select.Option>
-      <Select.Option value="banana">Banana</Select.Option>
-      <Select.Option value="cherry">Cherry</Select.Option>
-    </Select>
+    />
 ```
 
 ```tsx
@@ -3876,13 +3872,8 @@ Option sub-component
       value={value}
       onValueChange={(v) => setValue(v as string | null)}
       placeholder="Please select"
-    >
-      {data?.map((item) => (
-        <Select.Option key={item} value={item}>
-          {item}
-        </Select.Option>
-      ))}
-    </Select>
+      items={items}
+    />
 ```
 
 ```tsx
