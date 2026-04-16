@@ -230,7 +230,7 @@ export default function Example() {
           <th class="px-4 py-3 text-left font-semibold">Description</th>
         </tr>
       </thead>
-      <tbody class="text-kumo-strong">
+      <tbody>
         <tr class="border-b border-kumo-hairline">
           <td class="px-4 py-3 font-mono text-xs">valueMissing</td>
           <td class="px-4 py-3 text-xs">Required field is empty</td>
@@ -279,15 +279,15 @@ export default function Example() {
 
       ### Label Requirement
 
-      <p class="text-kumo-strong">
+      <p>
         Inputs require an accessible name via one of:
       </p>
-      <ul class="mt-2 ml-4 list-disc space-y-1 text-kumo-strong">
+      <ul class="mt-2 ml-4 list-disc space-y-1">
         <li>`label` prop (recommended)</li>
         <li>`placeholder` + `aria-label` for bare inputs</li>
         <li>`aria-labelledby` for custom label association</li>
       </ul>
-      <p class="mt-2 text-kumo-strong">
+      <p class="mt-2">
         Missing accessible names trigger console warnings in development.
       </p>
     </div>
@@ -295,7 +295,7 @@ export default function Example() {
 
       ### Error Association
 
-      <p class="text-kumo-strong">
+      <p>
         Error messages are automatically associated with the input via ARIA
         attributes for screen reader announcement.
       </p>
